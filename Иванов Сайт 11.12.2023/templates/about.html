@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link type="text/css" href="{{ url_for('static', filename='css/about.css') }}" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="gok">
+                <a href="{{ url_for('register') }}">
+                    Регистрация
+                </a>
+                <a href="{{ url_for('login') }}">
+                    Войти
+                </a>
+            </div>
+        </nav>
+        <div class="conteiner">
+            <h1>Интерактивная карта ВДНХ</h1>
+            <div class="matr">
+                <div class="help">
+                    <p class="s_header">Как пользоваться картой</p>
+                    <p><small>
+                            Наш сервис поможет сориентироваться на карте ВДНХ и построить оптимальный путь
+                            к
+                            основным локациям выставки.
+                        </small></p>
+                    <p><small>
+                            Изучай готовые маршруты, используй поиск по карте или построй собственные
+                            треки к
+                            интересующим тебя местам.
+                        </small></p>
+                    <p><small>
+                            Чтобы сохранить маршрут в избранное, <a href="{{ url_for('register') }}">пройди
+                                регистрацию**.</a>
+                        </small></p>
+                    <p><small class="ps">
+                            *Мы не собираем и не передаем ваши персональные данные. Регистрация
+                            необходима для сохранения ваших маршрутов в избранное личного кабинета.
+                        </small></p>
+                </div>
+                <div class="img">
+                    <img src="{{ url_for('static', filename='images/img_1.png') }}" class="img" />
+                </div>
+            </div>
+            <h1>Выбрать объекты на карте</h1>
+            <div class="matrsec">
+                <p class="potym">Поиск</p>
+                <p class="potym">Построить маршрут</p>
+                <p class="potym">Достопримечательности на карте ВДНХ</p>
+                <p class="potym">Маршрут 1: Метро ВДНХ - Главный вход ВДНХ</p>
+                <p class="potym">Маршрут 2: Главный вход ВДНХ - Каток ВДНХ</p>
+                <p class="potym">Маршрут 3: Главный вход ВДНХ - Павильон космос</p>
+            </div>
+            <img src="{{ url_for('static', filename='images/img.png') }}" class="imgsec" />
+        </div>
+    </main>
+</body>
+
+</html>

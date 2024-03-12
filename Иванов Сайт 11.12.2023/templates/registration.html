@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+</head>
+
+<body>
+    <main>
+        <h1>Регистрация</h1>
+        <input type="aainfoc" placeholder="Придумайте логин">
+        <input type="aainfoc" placeholder="Введите ваши фамилию и имя">
+        <input type="emailoc" placeholder="Введите email">
+        <input type="aapwoc" placeholder="Придумайте пароль">
+        <input type="aapwoc" placeholder="Повторите пароль">
+        <div class="legitcheck">
+            <input type="legitcheckbox">
+            <p>Принимаю всё что скажете</p>
+        </div>
+        <a href="{{ url_for('about') }}" class="button">Регистрация</a>
+
+    </main>
+</body>
+
+</html>
